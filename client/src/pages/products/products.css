@@ -1,0 +1,39 @@
+.EachProductCard{
+    border-radius: 5px;
+    width: 70%;
+    margin: 20px 15%;
+    background-color: rgb(230, 231, 230);
+}
+.Header{
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s;
+}
+.Header:hover{
+    padding-left: 90px;
+}
+.Header h2{
+    font-weight: normal;
+    font-size: 28px;
+}
+.Body{
+    height: 380px;
+}
+.Body button{
+    width: 40%;
+    height: 40px;
+    margin: 15px 30%;
+    border: none; outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Clothes .Header{background-color: #ffc107;}
+.Clothes .Body button{
+    background-color: #ffc107;
+    color: white;
+}
+.Clothes .Body button:hover{background-color: #bd8e00;}
