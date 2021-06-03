@@ -64,7 +64,7 @@ class Homepage extends Component {
             <ul className="Navbar FirstNavbar">
                 <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                 <a href="http://localhost:3000" className="NavLink">Home</a>
-                <a href="http://localhost:3000" className="NavLink">Products</a>
+                <a href="http://localhost:3000/Products" className="NavLink">Products</a>
                 <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
                 <div className="DropDown">
                     <button className="DropButton" onClick={DropDown}>Contact Us
@@ -86,7 +86,7 @@ class Homepage extends Component {
                   <div class="Bar3"></div>
                 </button><br/>
                 <a href="http://localhost:3000" className="NavLink">Home</a>
-                <a href="http://localhost:3000" className="NavLink">Products</a>
+                <a href="http://localhost:3000/Products" className="NavLink">Products</a>
                 <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
                 <div className="DropDown">
                     <button className="DropButton" onClick={ResponsiveDropDown}>Contact Us
