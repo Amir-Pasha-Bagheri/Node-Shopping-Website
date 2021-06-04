@@ -1,7 +1,7 @@
 .EachProductCard{
     border-radius: 5px;
-    width: 70%;
-    margin: 20px 15%;
+    width: 50%;
+    margin: 50px 25%;
     background-color: rgb(230, 231, 230);
 }
 .Header{
@@ -37,3 +37,47 @@
     color: white;
 }
 .Clothes .Body button:hover{background-color: #bd8e00;}
+
+.Sport .Header{background-color: #dc3545;}
+.Sport .Body button{
+    background-color: #dc3545;
+    color: white;
+}
+.Sport .Body button:hover{background-color: #7e1f29;}
+
+.Games .Header{background-color: #868e96;}
+.Games .Body button{
+    background-color: #868e96;
+    color: white;
+}
+.Games .Body button:hover{background-color: #484849;}
+
+.Mobile .Body button:hover{background-color: #28a745;}
+.Mobile .Header{background-color: #28a745;}
+.Mobile .Body button{
+    background-color: #28a745;
+    color: white;
+}
+.Mobile .Body button:hover{background-color: #18642a;}
+
+.Food .Header{background-color: #007bff;}
+.Food .Body button{
+    background-color: #007bff;
+    color: white;
+}
+.Food .Body button:hover{background-color: #08509c;}
+
+@media only screen and (max-width: 1000px) {
+    .EachProductCard{
+        width: 80%;
+        margin-left: 10%;margin-right: 10%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .EachProductCard{
+        height: 280px;
+    }
+    .EachProductCard .Body img{
+        height: 100px;
+    }
+}

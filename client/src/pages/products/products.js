@@ -2,6 +2,10 @@ import { Component } from "react";
 import history from '../../history'
 import './products.css'
 import clothes from './images/clothes.jpg'
+import food from './images/food.jpg'
+import mobile from './images/mobile.jpg'
+import sport from './images/sport.jpg'
+import games from './images/games.webp'
 
 class Products extends Component{
     render(){
@@ -74,29 +78,37 @@ class Products extends Component{
                     <a href="http://localhost:3000/Log-In" className="NavLink" id="LogIn">Log In</a>
                 </ul>
 
-                <div className="EachProductCard Clothes">
-                    <div className="Header"><h2>Clothes</h2></div>
-                    <div className="Body"><img src={clothes} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/')}>Buy</button></div>
+                <div className="EachProductCard Sport">
+                    <div className="Header"><h2>Sport Stuffs</h2></div>
+                    <div className="Body"><img src={sport} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/Products/Sport')}>Buy</button></div>
                 </div>
+
+                <hr style={{border:'0.001em solid #e0e0e0'}}/>
+
+                <div className="EachProductCard Mobile">
+                    <div className="Header"><h2>Mobiles</h2></div>
+                    <div className="Body"><img src={mobile} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/Products/Mobile')}>Buy</button></div>
+                </div>
+
+                <hr style={{border:'0.001em solid #e0e0e0'}}/>
 
                 <div className="EachProductCard Clothes">
                     <div className="Header"><h2>Clothes</h2></div>
-                    <div className="Body"><img src={clothes} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/')}>Buy</button></div>
+                    <div className="Body"><img src={clothes} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/Products/Clothes')}>Buy</button></div>
                 </div>
 
-                <div className="EachProductCard Clothes">
-                    <div className="Header"><h2>Clothes</h2></div>
-                    <div className="Body"><img src={clothes} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/')}>Buy</button></div>
+                <hr style={{border:'0.001em solid #e0e0e0'}}/>
+
+                <div className="EachProductCard Games">
+                    <div className="Header"><h2>Games</h2></div>
+                    <div className="Body"><img src={games} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/Products/Games')}>Buy</button></div>
                 </div>
 
-                <div className="EachProductCard Clothes">
-                    <div className="Header"><h2>Clothes</h2></div>
-                    <div className="Body"><img src={clothes} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/')}>Buy</button></div>
-                </div>
+                <hr style={{border:'0.001em solid #e0e0e0'}}/>
 
-                <div className="EachProductCard Clothes">
-                    <div className="Header"><h2>Clothes</h2></div>
-                    <div className="Body"><img src={clothes} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/')}>Buy</button></div>
+                <div className="EachProductCard Food">
+                    <div className="Header"><h2>Fresh Foods</h2></div>
+                    <div className="Body"><img src={food} alt="Clothes" width="100%" height="300px"/><button onClick={()=>history.push('/Products/Food')}>Buy</button></div>
                 </div>
             </>
         )
