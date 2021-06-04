@@ -121,7 +121,7 @@
     .NavLink{float: left;width: 18%;font-size: 19px;padding: 19px 1%;}
     .DropDown{font-size: 19px;}
     .Show{width: 20%;margin-left: 40%; margin-right: 40%;}
-    #LogIn{clear: left; float: left;margin-left: 30px;}
+    #LogIn{clear: left; float: left;margin-left: 4%;}
 }
 @media only screen and (max-width: 350px) {
   .Navbar{height: 100px;}
