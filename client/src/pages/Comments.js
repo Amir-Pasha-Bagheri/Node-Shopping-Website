@@ -36,6 +36,4 @@ class Comment extends React.Component {
     }
 }
 
-export {
-    Comment
-}
+export default Comment

@@ -7,7 +7,7 @@ import soda from './images/soda.jpg'
 import 'react-slideshow-image/dist/styles.css'
 import {Slide} from 'react-slideshow-image'
 import './homepage.css'
-import {Comment} from '../exportedComponents'
+import Comment from '../Comments'
 
 class Homepage extends Component {
     
