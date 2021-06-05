@@ -77,8 +77,17 @@ class Cart extends Component{
 
                 <div className="PriceOrderCartPage">
                     <button className="PriceTitle">Price</button><br/>
-                    <button className="PriceDetails">Low To High</button>
+                    <button className="OrderActived">Low To High</button>
                     <button className="PriceDetails">High To Low</button>
+                </div>
+
+                <div className="TypeOrderCartPage">
+                    <button className="TypeTitle">Type</button><br/>
+                    <button className="TypeDetails">Clothes</button>
+                    <button className="TypeDetails">Mobiles</button>
+                    <button className="TypeDetails">Games</button>
+                    <button className="TypeDetails">Foods</button>
+                    <button className="TypeDetails">Sport Stuffs</button>
                 </div>
 
             </>
