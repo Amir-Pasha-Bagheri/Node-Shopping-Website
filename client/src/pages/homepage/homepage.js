@@ -65,7 +65,7 @@ class Homepage extends Component {
                 <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                 <a href="http://localhost:3000" className="NavLink">Home</a>
                 <a href="http://localhost:3000/Products" className="NavLink">Products</a>
-                <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
+                <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
                 <div className="DropDown">
                     <button className="DropButton" onClick={DropDown}>Contact Us
                         <i className="fa fa-caret-down"></i>
@@ -87,7 +87,7 @@ class Homepage extends Component {
                 </button><br/>
                 <a href="http://localhost:3000" className="NavLink">Home</a>
                 <a href="http://localhost:3000/Products" className="NavLink">Products</a>
-                <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
+                <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
                 <div className="DropDown">
                     <button className="DropButton" onClick={ResponsiveDropDown}>Contact Us
                         <i className="fa fa-caret-down"></i>
