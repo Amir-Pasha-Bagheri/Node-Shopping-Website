@@ -1,0 +1,383 @@
+.Navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.808);
+    height: 100px;
+    transition: 00.3s;
+}
+.SecondNavbar{display: none;height: 100px;}
+.SecondNavbar .NavLink, .SecondNavbar .DropDown{
+  text-align: center;
+  width: 90%;
+  margin-left: 5%; margin-right: 5%;
+}
+.NavLink{
+    float: left;
+    margin-top: 25px;
+    transition: 0.2s;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 19px;
+    text-decoration: none;
+}  
+.NavLink:hover, .DropButton:hover{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.685);
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.NavLink span{
+    background-color: white;
+    color: black;
+    padding: 2px 3px 3px 3px;
+    border-radius: 10px;
+}
+#LogIn{float: right;margin-right: 4%;}
+.Brand{
+    float: left;
+    margin-top: 10px;
+    font-size: 32px;
+    padding-right: 40px;
+    transition: 0.2s;
+    color: white;
+    margin-top: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Brand:hover{
+    text-decoration: none;
+    color: #cbce91ff;
+}
+.DropDown {
+    float: left;
+    overflow: hidden;
+}
+.DropButton {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    transition: 0.2s;
+    margin-top: 25px;
+    position: relative;
+}  
+.DropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+.DropdownContent a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 5px;
+}
+.DropdownContent a:hover {
+    background-color: #ddd;
+  }
+.Show {
+    display: block;
+}
+.Bar1, .Bar2, .Bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.Change .Bar1 {
+  -webkit-transform: rotate(-50deg) translate(-9px, 6px);
+  transform: rotate(-48deg) translate(-9px, 6px);
+}
+.Change .Bar2 {opacity: 0;}
+.Change .Bar3 {
+  -webkit-transform: rotate(50deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.BarIcon{
+  float: right;
+  margin: 25px 30px;
+}
+@media only screen and (max-width: 800px) {
+    .FirstNavbar{display: none;}
+    .SecondNavbar{display: block;height: 100px;}
+    .NavLink{float: left;width: 18%;font-size: 19px;padding: 19px 1%;}
+    .DropDown{font-size: 19px;}
+    .Show{width: 20%;margin-left: 40%; margin-right: 40%;}
+    #LogIn{clear: left; float: left;margin-left: 4%;}
+}
+@media only screen and (max-width: 350px) {
+  .Navbar{height: 100px;}
+  .NavLink{width: 100%;}
+  .Brand{width: 30%;}
+  .DropDown{width: 80%;text-align: center;margin: 0 10%;}
+}
+
+/* Slide Shows Style*/
+.each-slide > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+.each-slide span{
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+  margin: 356px 10% 0 10%;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px black
+}
+.Slide-Container{
+  width: 50%;
+  margin: 30px 25% 0 25%;
+}
+@media only screen and (max-width: 1200px) {
+  .Slide-Container{width: 90%;margin: 30px 5% 0 5%;}
+  .each-slide > div {background-position: 50% 50%;}
+  .each-slide span{ margin: 400px auto 0px auto;}
+}
+@media only screen and (max-width: 620px) {
+  .Slide-Container{width: 90%;margin: -90px 5% 0 5%;z-index: -1;position: absolute;}
+  .each-slide span{ margin: 300px auto 0px auto;}
+}
+@media only screen and (max-width: 400px) {
+  .each-slide span{font-size: 14px;margin: 250px auto 0px auto;}
+}
+
+.TakeALook{
+  margin: 50px 0 10px 100px;
+  padding: 10px 3%;
+  background-color: rgba(33, 136, 33, 0.856);
+  width: 37%;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.TakeALook:hover{margin-left: 160px;}
+.hr{
+  margin-top: 30px; margin-bottom: 20px;
+  border: 1px solid rgb(214, 214, 214);
+}
+.CollapseBackGround{
+  background-color: rgba(204, 204, 204, 0.507);
+  padding: 70px 0;
+}
+.CollapseButton{
+  background-color: rgb(167, 45, 45);;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  margin: 0 25% 0 25%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: sans-serif;
+  transition: 0.3s;
+}
+.CollapseButton::after{
+  content: '↓';
+  float: right;
+  margin-right: 10px;
+  transform: scale(1.5);
+}
+.CollapseContainer{
+  background-color: rgba(172, 172, 172, 0.404);
+  width: 48%;
+  padding-left: 2%;
+  margin: 0 25% 0 25%;
+  font-family:'Gill Sans MT';
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.CollapseContainer hr{border: 1px solid black; margin-left: -4%;}
+.CollapseContainer button{
+  outline: none;border: none;background-color: #d6a207;cursor: pointer;border-radius: 5px;color: white;font-size: 16px;
+  padding: 10px;width: 20%;top: 20px;transition: 0.2s;position: relative;margin-bottom: 40px;
+}
+.CollapseContainer button:hover{background-color: rgb(214, 180, 27);font-size: 20px;}
+.Active, .CollapseButton:hover{background-color: rgb(126, 2, 2);}
+.Active:after {content: "↑";}
+.First{border-radius: 5px 5px 0 0;}
+.Last{border-radius: 0 0 5px 5px;}
+@media only screen and (max-width: 900px) {
+  .TakeALook{width: 74%;text-align: center;margin-left: 10%;margin-right: 10%;}
+  .TakeALook:hover{margin-left: 10%;}
+  .CollapseButton{width: 70%;margin-left: 15%;margin-right: 15%;}
+  .CollapseContainer{width: 68%;margin-left: 15%;margin-right: 15%;}
+}
+@media only screen and (max-width: 620px){
+  .TakeALook{margin-top: 400px;}
+  .NegativeMargin{margin-top: 0px;}
+  .CollapseContainer button{width: 30%;margin-left: 35%;margin-right: 35%;}
+}
+@media only screen and (max-width: 450px){.TakeALook{font-size: 18px;}}
+
+.CommentBox{
+  margin: 50px 20% 10px 20%;
+  padding: 4px 5px;
+  background-color: rgba(33, 136, 33, 0.856);
+  width: 60%;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+.CommentBox h2{font-weight: normal; font-size: 28px;}
+.CommentCard{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 54%;
+  margin: 0 20% 0 20%;
+  padding: 3%;
+  overflow: hidden;
+  box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc;
+}
+.Comment{
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  width: 60%;
+  padding-top: 20px;
+  margin: 0 20% 0 20%;
+}
+.Comment h1{font-weight: normal;font-size: 24px;}
+.Comment span{font-size: 18px;}
+.CommentMessage{
+  border-radius: 10px;
+  background-color: #ddd;
+  padding: 20px;
+  overflow: hidden;
+}
+.CommentReply{
+  margin-top: 12px; margin-right: 15px;
+  border: none; outline: none;
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 12px;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+  color: #efefef;
+  transition: 0.2s;
+}
+.CommentReply:hover{font-size: 16px;margin-left: 20px;}
+.ReplyComment{
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 18px;
+  margin: 10px 20px 0 20px;
+}
+.ReplyComment h1{font-weight: normal;font-size: 19px;}
+.ReplyComment span{font-size: 16px;}
+.ReplyCommentMessage{
+  border-radius: 10px;
+  background-color: #ddd;
+  padding: 20px;
+  overflow: hidden;
+}
+.CommentInput{margin-top: -20px;}
+.CommentInput textarea{
+  resize: none;
+  width: 80%;
+  margin: 50px 10% 0 10%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px;
+  background-color: #efefef;
+  padding: 10px;
+  font-family: Helvetica;
+  font-size: 15px;
+}
+.CommentInput button{
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin: 20px 25% 10px 25%;
+  transition: 00.1s;
+}
+.CommentInput button:hover{background-color: #0069da;}
+@media only screen and (max-width: 1350px){
+  .CommentCard{
+    width: 74%;
+    margin: 0 10% 0 10% ;
+  }
+  .CommentReply{
+    width: 40%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px){
+  .Comment{width: 84%;margin-left: 5%;margin-right: 5%;}
+}
+.AddCommentTextArea{
+  resize: none;
+  border: none;outline: none;box-shadow: none;
+  width: 74%;
+  margin: 20px 10% 20px 10%;
+  border-radius: 5px;
+  background-color: #efefef;
+  padding: 3%;
+  font-family: Helvetica;
+  font-size: 15px;
+}
+.AddCommentTitle{
+  margin: 0 0 0 10%;
+  font-size: 20px;
+}
+.AddCommentSend{
+  border: none;outline: none;
+  color: white;
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 25% 30px 25%;
+  cursor: pointer;
+  transition: 00.2s;
+}
+.AddCommentSend:hover{background-color: #0069da;}
+@media only screen and (max-width: 600px){
+  .PrimaryColor{
+    padding: unset;
+    padding: 10px 0;
+    margin: 30px 10% 20px 10%;
+    width: 80%;
+  }
+}
