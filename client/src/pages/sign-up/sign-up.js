@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 import React, {Component} from 'react'
 import axios from 'axios'
 import history from '../../history'
+=======
+import {Component} from 'react'
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 
 class SignUp extends Component {
 
@@ -110,6 +114,7 @@ class SignUp extends Component {
             else{
                 document.getElementById("ConfirmPasswordTitle").style.display = "none"
                 document.getElementById("ConfirmPasswordTitle").innerText = ""
+<<<<<<< HEAD
 
                 axios.post('http://localhost:3001/SignUp',{
                     username : document.getElementById("username").value,
@@ -138,16 +143,27 @@ class SignUp extends Component {
                         })
                     }
                 })
+=======
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
             }
         }
 
         return(
+<<<<<<< HEAD
             <React.Fragment>
                 <ul className="Navbar FirstNavbar">
                     <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                     <a href="http://localhost:3000" className="NavLink">Home</a>
                     <a href="http://localhost:3000/Products" className="NavLink">Products</a>
                     <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
+=======
+            <>
+                <ul className="Navbar FirstNavbar">
+                    <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
+                    <a href="http://localhost:3000" className="NavLink">Home</a>
+                    <a href="http://localhost:3000" className="NavLink">Products</a>
+                    <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                     <div className="DropDown">
                         <button className="DropButton" onClick={DropDown}>Contact Us
                             <i className="fa fa-caret-down"></i>
@@ -163,6 +179,7 @@ class SignUp extends Component {
                 <ul className="Navbar SecondNavbar" id="SecondNavbar">
                     <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                     <button className="BarIcon" id="BarIcon" onClick={IconBar}>
+<<<<<<< HEAD
                     <div className="Bar1"></div>
                     <div className="Bar2"></div>
                     <div className="Bar3"></div>
@@ -170,6 +187,15 @@ class SignUp extends Component {
                     <a href="http://localhost:3000" className="NavLink">Home</a>
                     <a href="http://localhost:3000/Products" className="NavLink">Products</a>
                     <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
+=======
+                    <div class="Bar1"></div>
+                    <div class="Bar2"></div>
+                    <div class="Bar3"></div>
+                    </button><br/>
+                    <a href="http://localhost:3000" className="NavLink">Home</a>
+                    <a href="http://localhost:3000" className="NavLink">Products</a>
+                    <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                     <div className="DropDown">
                         <button className="DropButton" onClick={ResponsiveDropDown}>Contact Us
                             <i className="fa fa-caret-down"></i>
@@ -187,7 +213,11 @@ class SignUp extends Component {
                     <div className="SeuggestionBox" ><h2>Create Account Form</h2></div>
                     <hr/>
 
+<<<<<<< HEAD
                     <div id="ConfirmPasswordTitle" style={{textAlign:'center'}}></div>
+=======
+                    <div id="ConfirmPasswordTitle"></div>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 
                     <div className ="ContainerForm">
                         <label htmlFor="name">Username :</label><br/>
@@ -218,7 +248,11 @@ class SignUp extends Component {
                 <p className="CreateAccount">Already Have An Account ? <a href="http://localhost:3000/Log-In">Click Here For Log In</a></p>
 
                 <br/><br/>
+<<<<<<< HEAD
             </React.Fragment>
+=======
+            </>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
         )
     }
 }

@@ -1,5 +1,8 @@
 import { Route , Switch } from 'react-router-dom'
+<<<<<<< HEAD
 import React from 'react'
+=======
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 
 import Homepage from './homepage/homepage'
 import ContactUs from './contact-us/contact-us'

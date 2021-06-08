@@ -1,16 +1,26 @@
+<<<<<<< HEAD
 import React from 'react';
+=======
+import {React} from 'react';
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 import ReactDOM from 'react-dom';
 import './index.css';
 import Routes from './pages/routes'
 import {Router} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 import history from './history'
+<<<<<<< HEAD
 import ScrollToTop from './ScrollToTop';
+=======
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 
 ReactDOM.render(
   <Router history={history}>
     <Routes />
+<<<<<<< HEAD
     <ScrollToTop />
+=======
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
   </Router>,
   document.getElementById('root')
 );

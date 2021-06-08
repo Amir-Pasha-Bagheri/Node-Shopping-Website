@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {Component} from 'react'
+=======
+import {Component} from 'react'
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 import pizza from './images/pizza.jpg'
 import phone from './images/phone.jpg'
 import ps5 from './images/ps5.jpg'
@@ -8,6 +12,7 @@ import 'react-slideshow-image/dist/styles.css'
 import {Slide} from 'react-slideshow-image'
 import './homepage.css'
 import Comment from '../Comments'
+<<<<<<< HEAD
 import AuthHeader from '../../API-default-request'
 import history from '../../history'
 
@@ -19,6 +24,10 @@ class Homepage extends Component {
         cart : []        
       }
     }
+=======
+
+class Homepage extends Component {
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
     
     componentDidMount(){
       const coll = document.getElementsByClassName("CollapseButton");
@@ -36,19 +45,29 @@ class Homepage extends Component {
           } 
         });
       }
+<<<<<<< HEAD
 
       AuthHeader.get('/')
       .then(res=>{
         this.setState({user:res.data})
       })
+=======
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
     }
 
     render(){
       
+<<<<<<< HEAD
       const DropDown = () => document.getElementById("DropdownContent").classList.toggle("Show");
       
       // Close the dropdown if the user clicks outside of it
       window.onclick = function(e) {
+=======
+        const DropDown = () => document.getElementById("DropdownContent").classList.toggle("Show");
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
             if (!e.target.matches('.DropButton')) {
             const myDropdown = document.getElementById("DropdownContent");
             const myResponsiveDropdown = document.getElementById("ResponsiveDropdownContent");
@@ -72,16 +91,25 @@ class Homepage extends Component {
           else Navbar.style.height = "100px"
         }
 
+<<<<<<< HEAD
         const LogInClick = () => this.state.user.username===''?history.push('/Log-In'):history.push('/Profile')
 
         return(
             <React.Fragment>
+=======
+        return(
+            <>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 
             <ul className="Navbar FirstNavbar">
                 <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                 <a href="http://localhost:3000" className="NavLink">Home</a>
                 <a href="http://localhost:3000/Products" className="NavLink">Products</a>
+<<<<<<< HEAD
                 <a href="http://localhost:3000/Cart" className="NavLink">Cart {this.state.user.username===''?<span>0</span>:<span>{this.state.user.cart.length}</span>}</a>
+=======
+                <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                 <div className="DropDown">
                     <button className="DropButton" onClick={DropDown}>Contact Us
                         <i className="fa fa-caret-down"></i>
@@ -91,12 +119,17 @@ class Homepage extends Component {
                         <a href="http://localhost:3000/Contact-Us">E-Mail</a>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div onClick={LogInClick} className="NavLink" id="LogIn">{this.state.user.username===''?<div>Log In</div>:this.state.user.username}</div>
+=======
+                <a href="http://localhost:3000/Log-In" className="NavLink" id="LogIn">Log In</a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
             </ul>
 
             <ul className="Navbar SecondNavbar" id="SecondNavbar">
                   <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                 <button className="BarIcon" id="BarIcon" onClick={IconBar}>
+<<<<<<< HEAD
                   <div className="Bar1"></div>
                   <div className="Bar2"></div>
                   <div className="Bar3"></div>
@@ -104,6 +137,15 @@ class Homepage extends Component {
                 <a href="http://localhost:3000" className="NavLink">Home</a>
                 <a href="http://localhost:3000/Products" className="NavLink">Products</a>
                 <a href="http://localhost:3000/Cart" className="NavLink">Cart {this.state.user.username===''?<span>0</span>:<span>{this.state.user.cart.length}</span>}</a>
+=======
+                  <div class="Bar1"></div>
+                  <div class="Bar2"></div>
+                  <div class="Bar3"></div>
+                </button><br/>
+                <a href="http://localhost:3000" className="NavLink">Home</a>
+                <a href="http://localhost:3000/Products" className="NavLink">Products</a>
+                <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                 <div className="DropDown">
                     <button className="DropButton" onClick={ResponsiveDropDown}>Contact Us
                         <i className="fa fa-caret-down"></i>
@@ -113,7 +155,11 @@ class Homepage extends Component {
                         <a href="http://localhost:3000/Contact-Us">E-Mail</a>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div onClick={LogInClick} className="NavLink" id="LogIn">{this.state.user.username===''?<div>Log In</div>:this.state.user.username}</div>
+=======
+                <a href="http://localhost:3000/Log-In" className="NavLink" id="LogIn">Log In</a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
             </ul>
 
             <div className="Slide-Container">
@@ -205,7 +251,11 @@ class Homepage extends Component {
               <a href="#Success"><button className="AddCommentSend">Send</button></a>
             </div><br/><br/>
 
+<<<<<<< HEAD
             </React.Fragment>
+=======
+            </>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
         )
     }
 }

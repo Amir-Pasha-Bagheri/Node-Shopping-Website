@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, {Component} from 'react'
+=======
+import {Component} from 'react'
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 import './log-in.css'
 
 class LogIn extends Component {
@@ -88,12 +92,21 @@ class LogIn extends Component {
         }
 
         return(
+<<<<<<< HEAD
             <React.Fragment>
                 <ul className="Navbar FirstNavbar">
                     <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                     <a href="http://localhost:3000" className="NavLink">Home</a>
                     <a href="http://localhost:3000/Products" className="NavLink">Products</a>
                     <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
+=======
+            <>
+                <ul className="Navbar FirstNavbar">
+                    <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
+                    <a href="http://localhost:3000" className="NavLink">Home</a>
+                    <a href="http://localhost:3000" className="NavLink">Products</a>
+                    <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                     <div className="DropDown">
                         <button className="DropButton" onClick={DropDown}>Contact Us
                             <i className="fa fa-caret-down"></i>
@@ -109,6 +122,7 @@ class LogIn extends Component {
                 <ul className="Navbar SecondNavbar" id="SecondNavbar">
                     <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                     <button className="BarIcon" id="BarIcon" onClick={IconBar}>
+<<<<<<< HEAD
                     <div className="Bar1"></div>
                     <div className="Bar2"></div>
                     <div className="Bar3"></div>
@@ -116,6 +130,15 @@ class LogIn extends Component {
                     <a href="http://localhost:3000" className="NavLink">Home</a>
                     <a href="http://localhost:3000/Products" className="NavLink">Products</a>
                     <a href="http://localhost:3000/Cart" className="NavLink">Cart <span>0</span></a>
+=======
+                    <div class="Bar1"></div>
+                    <div class="Bar2"></div>
+                    <div class="Bar3"></div>
+                    </button><br/>
+                    <a href="http://localhost:3000" className="NavLink">Home</a>
+                    <a href="http://localhost:3000" className="NavLink">Products</a>
+                    <a href="http://localhost:3000" className="NavLink">Cart <span>0</span></a>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                     <div className="DropDown">
                         <button className="DropButton" onClick={ResponsiveDropDown}>Contact Us
                             <i className="fa fa-caret-down"></i>
@@ -155,7 +178,11 @@ class LogIn extends Component {
                 <p className="CreateAccount">Don't Have An Account Yet ? <a href="http://localhost:3000/Sign-Up">Create New One</a></p>
 
                 <br/><br/>
+<<<<<<< HEAD
             </React.Fragment>
+=======
+            </>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
         )
     }
 }

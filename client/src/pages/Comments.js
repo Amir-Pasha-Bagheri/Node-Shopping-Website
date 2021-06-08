@@ -9,7 +9,11 @@ class Comment extends React.Component {
         }
 
         return (
+<<<<<<< HEAD
             <React.Fragment>
+=======
+            <>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                 <div className="CommentCard">
 
                     <h1>{this.props.user.name} <span><small><i>{this.props.user.date}</i></small></span></h1>
@@ -31,7 +35,11 @@ class Comment extends React.Component {
                 
               </div><br/><br/>
               
+<<<<<<< HEAD
             </React.Fragment>
+=======
+            </>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
         )
     }
 }

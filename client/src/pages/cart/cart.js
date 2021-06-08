@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React,{ Component } from "react";
+=======
+import { Component } from "react";
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 import './cart.css'
 
 
@@ -34,7 +38,11 @@ class Cart extends Component{
         }
 
         return(
+<<<<<<< HEAD
             <React.Fragment>
+=======
+            <>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
 
                 <ul className="Navbar FirstNavbar">
                     <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
@@ -56,9 +64,15 @@ class Cart extends Component{
                 <ul className="Navbar SecondNavbar" id="SecondNavbar">
                     <a href="http://localhost:3000" className="Brand rounded" title="Name Of Website">Website</a>
                     <button className="BarIcon" id="BarIcon" onClick={IconBar}>
+<<<<<<< HEAD
                     <div className="Bar1"></div>
                     <div className="Bar2"></div>
                     <div className="Bar3"></div>
+=======
+                    <div class="Bar1"></div>
+                    <div class="Bar2"></div>
+                    <div class="Bar3"></div>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
                     </button><br/>
                     <a href="http://localhost:3000" className="NavLink">Home</a>
                     <a href="http://localhost:3000/Products" className="NavLink">Products</a>
@@ -90,7 +104,11 @@ class Cart extends Component{
                     <button className="TypeDetails">Sport Stuffs</button>
                 </div>
 
+<<<<<<< HEAD
             </React.Fragment>
+=======
+            </>
+>>>>>>> bdf8587a06105284cee94b5c960e41ebf7017702
         )
     }
 }
